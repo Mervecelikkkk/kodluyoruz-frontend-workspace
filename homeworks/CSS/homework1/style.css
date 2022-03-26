@@ -1,0 +1,47 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+
+}
+/* .navbar {
+
+
+}
+nav {
+    
+} */
+
+.navbar ul {
+list-style-type: none;
+/* padding-left: 50px; */
+
+}
+
+.navbar a {
+color:rgb(32, 29, 29);
+text-decoration: none;
+font-size: medium;
+padding-left: 30px;
+font-weight: 600;
+
+
+}
+
+.nav-top {
+display:inline-block;
+}
+
+.logo {
+font-size: 32px;
+color:rgb(32, 29, 29);
+font-family:  'Dancing Script', cursive;
+padding-right: 100px;
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #e0e0e0;
+    color:rgb(32, 29, 29);
+    float:inline-end;
+}
