@@ -26,6 +26,9 @@ font-weight: 600;
 
 }
 
+.navbar a:hover {
+    color: #4CAF50;
+}
 .nav-top {
 display:inline-block;
 }
@@ -37,8 +40,40 @@ font-family:  'Dancing Script', cursive;
 padding-right: 100px;
 
 }
+
+.card-img-top {
+height: 200px;
+
+
+}
+.card {
+float: left;
+margin: 20px 20px 20px 27px;
+}
+.btn-order {
+       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+       border-radius: 2px;
+       background-color: #4CAF50; /* Green */
+       border: none;
+       color: white;
+       padding: 13px 30px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 13px;
+      
+      
+}
+.btn-order:hover {
+    
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 footer {
     display: flex;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
     justify-content: center;
     padding: 5px;
     background-color: #e0e0e0;
