@@ -2,6 +2,7 @@
 <html lang="tr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200&family=Hurricane&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/kodluyoruz-frontend-workspace/homeworks/CSS/homework1/style.css">
+    <link rel="stylesheet" href="/homeworks/CSS/homework1/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -21,6 +22,15 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script>
+  var carouselExampleIndicators = document.querySelector('#carouselExampleIndicators')
+var carousel = new bootstrap.Carousel(carouselExampleIndicators, {
+  interval: 2000,
+  wrap: false
+})
+</script>
+
 </head>
 
 <body>
@@ -30,9 +40,9 @@
         <nav class="navbar">
             <ul>
                 <li class="nav-top logo"><i class="fas fa-guitar"></i> Müzik Dükkanım </li>
-                <li class="nav-top"><a href="#">Ana Sayfa</a></li>
-                <li class="nav-top"><a href="#">Ürünlerimiz</a></li>
-                <li class="nav-top"><a href="#">Hakkımızda</a></li>
+                <li class="nav-top"><a href="index.html">Ana Sayfa</a></li>
+                <li class="nav-top"><a href="products.html">Ürünlerimiz</a></li>
+                <li class="nav-top"><a href="about-us.html">Hakkımızda</a></li>
 
             </ul>
         </nav>
@@ -42,71 +52,132 @@
     <!-- Content - Start -->
     <section>
         <!-- Articles - Start -->
-     
-        <article class="card" style="width: 18rem;">
-            <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/azumi-yan-flut.jpg" alt="Card image cap">
+  <article>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
+          <img src="/img/slider-img1.jpg"  class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider-img2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider-img3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </article>
+  <h4><b>Tüm Ürünler</b></h4>
+        <article class="card card-product" style="width: 18rem;">
+            <img class="card-img-top " src="/img/products/azumi-yan-flut.jpg" alt="Card image cap">
             <article class="card-body">
               <h5 class="card-title">3000 TL</h5>
-              <p class="card-text">ALTUS Yan Flut</p>
+              <p class="card-text">Azumi Yan Flut</p>
               <button href="#" class="btn-order">SATIN AL</button>
             </article>
           </article>  
-          <article class="card" style="width: 18rem;">
-            <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/azumi-yan-flut.jpg" alt="Card image cap">
+          <article class="card card-product" style="width: 18rem;">
+            <img class="card-img-top " src="/img/products/kuyruklu-piyano.jpg" alt="Card image cap">
             <article class="card-body">
-              <h5 class="card-title">3000 TL</h5>
-              <p class="card-text">ALTUS Yan Flut</p>
+              <h5 class="card-title">15000 TL</h5>
+              <p class="card-text">Beyaz Kuyruklu Piyano</p>
               <button href="#" class="btn-order">SATIN AL</button>
             </article>
           </article>  
-          <article class="card" style="width: 18rem;">
-            <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/azumi-yan-flut.jpg" alt="Card image cap">
+          <article class="card card-product" style="width: 18rem;">
+            <img class="card-img-top " src="/img/products/kozmos-kuyruklu-piyano.jpg" alt="Card image cap">
             <article class="card-body">
-              <h5 class="card-title">3000 TL</h5>
-              <p class="card-text">ALTUS Yan Flut</p>
+              <h5 class="card-title">21000 TL</h5>
+              <p class="card-text">KOZMOS Kuyruklu Piyano</p>
               <button href="#" class="btn-order">SATIN AL</button>
             </article>
           </article>  
-          <article class="card" style="width: 18rem;">
-            <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/azumi-yan-flut.jpg" alt="Card image cap">
+          <article class="card card-product" style="width: 18rem;">
+            <img class="card-img-top " src="/img/products/solak-elektro.jpg" alt="Card image cap">
             <article class="card-body">
-              <h5 class="card-title">3000 TL</h5>
-              <p class="card-text">ALTUS Yan Flut</p>
+              <h5 class="card-title">7000 TL</h5>
+              <p class="card-text">Solak Elektro Gitar</p>
               <button href="#" class="btn-order">SATIN AL</button>
             </article>
           </article>   
-          <article class="card" style="width: 18rem;">
-            <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/azumi-yan-flut.jpg" alt="Card image cap">
+          <article class="card card-product" style="width: 18rem;">
+            <img class="card-img-top " src="/img/products/roland-dj-kontrol-cihazi.webp" alt="Card image cap">
             <article class="card-body">
-              <h5 class="card-title">3000 TL</h5>
-              <p class="card-text">ALTUS Yan Flut</p>
+              <h5 class="card-title">9000 TL</h5>
+              <p class="card-text">ROLAND Dj Kontrol Cihazı</p>
               <button href="#" class="btn-order">SATIN AL</button>
             </article>
           </article>  
-               <article class="card" style="width: 18rem;">
-                <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/azumi-yan-flut.jpg" alt="Card image cap">
+               <article class="card card-product" style="width: 18rem;">
+                <img class="card-img-top " src="/img/products/azumi-yan-flut.webp" alt="Card image cap">
                 <article class="card-body">
-                  <h5 class="card-title">3000 TL</h5>
-                  <p class="card-text">ALTUS Yan Flut</p>
+                  <h5 class="card-title">7500 TL</h5>
+                  <p class="card-text">AZUMI Yan Flut</p>
                   <button href="#" class="btn-order">SATIN AL</button>
                 </article>
               </article>  
-              <article class="card" style="width: 18rem;">
-                <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/native-dj-kontrol-cihazi.jpg" alt="Card image cap">
+              <article class="card card-product" style="width: 18rem;">
+                <img class="card-img-top " src="/img/products/native-dj-kontrol-cihazi.jpg" alt="Card image cap">
                 <article class="card-body">
-                  <h5 class="card-title">3000 TL</h5>
-                  <p class="card-text">ALTUS Yan Flut</p>
+                  <h5 class="card-title">11000 TL</h5>
+                  <p class="card-text">NATIVE Dj Kontrol Cihazı</p>
                   <button href="#" class="btn-order">SATIN AL</button>
                 </article>
               </article>  
-              <article class="card" style="width: 18rem;">
-                <img class="card-img-top " src="/kodluyoruz-frontend-workspace/img/products/azumi-yan-flut.jpg" alt="Card image cap">
+              <article class="card card-product" style="width: 18rem;">
+                <img class="card-img-top " src="/img/products/focus-yan-flut.jpg" alt="Card image cap">
                 <article class="card-body">
-                  <h5 class="card-title">3000 TL</h5>
-                  <p class="card-text">ALTUS Yan Flut</p>
+                  <h5 class="card-title">4500 TL</h5>
+                  <p class="card-text">FOCUS Yan Flut</p>
                   <button href="#" class="btn-order">SATIN AL</button>
                 </article>
               </article>  
+              
+              <article class="card card-product" style="width: 18rem;">
+                <img class="card-img-top " src="/img/products/azumi-yan-flut.webp" alt="Card image cap">
+                <article class="card-body">
+                  <h5 class="card-title">3000 TL</h5>
+                  <p class="card-text">Azumi Yan Flut</p>
+                  <button href="#" class="btn-order">SATIN AL</button>
+                </article>
+              </article>  
+              <article class="card card-product" style="width: 18rem;">
+                <img class="card-img-top " src="/img/products/kuyruklu-piyano.jpg" alt="Card image cap">
+                <article class="card-body">
+                  <h5 class="card-title">15000 TL</h5>
+                  <p class="card-text">Beyaz Kuyruklu Piyano</p>
+                  <button href="#" class="btn-order">SATIN AL</button>
+                </article>
+              </article>  
+              <article class="card card-product" style="width: 18rem;">
+                <img class="card-img-top " src="/img/products/kozmos-kuyruklu-piyano.jpg" alt="Card image cap">
+                <article class="card-body">
+                  <h5 class="card-title">21000 TL</h5>
+                  <p class="card-text">KOZMOS Kuyruklu Piyano</p>
+                  <button href="#" class="btn-order">SATIN AL</button>
+                </article>
+              </article>  
+              <article class="card card-product" style="width: 18rem;">
+                <img class="card-img-top " src="/img/products/solak-elektro.jpg" alt="Card image cap">
+                <article class="card-body">
+                  <h5 class="card-title">7000 TL</h5>
+                  <p class="card-text">Solak Elektro Gitar</p>
+                  <button href="#" class="btn-order">SATIN AL</button>
+                </article>
+              </article>   
 
         <!-- Articles - End -->
     </section>
