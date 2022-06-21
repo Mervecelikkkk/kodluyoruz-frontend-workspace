@@ -1,3 +1,12 @@
+nav {
+
+  padding: 6px;
+  padding-left: 0px;
+  height:48px;
+  min-width: auto;
+  position: relative;
+}
+
 .header {
     list-style-type: none;
     margin: 10px;
@@ -5,18 +14,29 @@
     margin-right: 16px;
     font-family: arial,sans-serif;
     font-size: 13px;
+    display: flex;
+    align-items: center;
+ font-family: Arial, sans-serif;
+    float: right;
   }
   
   .headerli a {
     display: block;
-    color: black;
+    color:rgba(0,0,0,.87);
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 13px;
   }
   
   .headerli a:hover {
     text-decoration: underline;
+  }
+
+  .pic {
+    border-radius: 50px;
   }
   
   .container {
@@ -34,10 +54,13 @@
     margin: 0 auto;
     margin-top: -77px;
     width: 582px;
+    border-radius: 20px;
+  
   }
   
   .search-area:hover {
   box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+
   }
   
   .search {
@@ -47,10 +70,29 @@
     padding-left: 14px;
   }
   
-  .search-img {
+  #voiceSearchButton {
     display: flex;
     align-items: center;
     padding-right: 13px;
+    margin-top: -5px;
+    background: url(chrome://new-tab-page/icons/googlemic_clr_24px.svg) no-repeat center;
+    background-size: 21px 21px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    right: 16px;
+    width: 26px;
+  }
+
+  .search-voice {
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
     margin-top: -5px;
   }
   
@@ -102,6 +144,8 @@
     text-align: start;
     appearance: textfield;
     cursor: text;
+    border: none;
+    width: 480px;
   }
   
   .googlesearch {
