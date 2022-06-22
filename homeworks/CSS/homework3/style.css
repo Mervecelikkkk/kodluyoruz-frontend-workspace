@@ -16,7 +16,7 @@ nav {
     font-size: 13px;
     display: flex;
     align-items: center;
- font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     float: right;
   }
   
@@ -26,9 +26,9 @@ nav {
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block;
     line-height: 24px;
-    font-size: 13px;
+    font-size: 13px; */
   }
   
   .headerli a:hover {
@@ -36,13 +36,14 @@ nav {
   }
 
   .pic {
-    border-radius: 50px;
+    border-radius: 50%;
   }
   
   .container {
     text-align: center;
     margin: 100px;
   }
+  
   
   .search-area {
     background: #fff;
@@ -53,8 +54,10 @@ nav {
     height: 44px;
     margin: 0 auto;
     margin-top: -77px;
+    width: auto;
     width: 582px;
-    border-radius: 20px;
+    border-radius: 24px;
+
   
   }
   
@@ -68,33 +71,98 @@ nav {
     display: flex;
     padding: 5px 8px 0 16px;
     padding-left: 14px;
+    
   }
-  
-  #voiceSearchButton {
+
+  .search-img {
     display: flex;
     align-items: center;
     padding-right: 13px;
     margin-top: -5px;
-    background: url(chrome://new-tab-page/icons/googlemic_clr_24px.svg) no-repeat center;
-    background-size: 21px 21px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    height: 100%;
-    outline: none;
-    padding: 0;
-    pointer-events: auto;
-    position: absolute;
-    right: 16px;
-    width: 26px;
+  
   }
-
   .search-voice {
     display: flex;
     align-items: center;
-    padding-left: 13px;
+    padding-right: 8px;
+    padding-left: 8px;
     margin-top: -5px;
+
+    
   }
+  
+    #voiceSearchButton {
+    /* display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px; */
+    background: url(/img/googlemic_clr_24px.svg) no-repeat center;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background-size: 21px 21px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+     /* position: absolute;*/
+    right: 16px; 
+   
+  }
+
+
+  :-webkit-any(input, ntp-realbox-icon, #voiceSearchButton) {
+      z-index: 100;
+  }
+
+  button {
+      appearance: auto;
+      writing-mode: horizontal-tb !important;
+      text-rendering: auto;
+      letter-spacing: normal;
+      word-spacing: normal;
+      line-height: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: center;
+      align-items: flex-start;
+      cursor: default;
+      box-sizing: border-box;
+      margin: 0em;
+      padding: 1px 6px;
+      border-width: 2px;
+      border-style: outset;
+      border-image: initial;
+  }
+
+
+  button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+
+}
   
   .search-img span {
     color: #9aa0a6;
@@ -105,6 +173,8 @@ nav {
     fill: currentColor;
     line-height: 24px;
     position: relative;
+    align-items: center !important;
+
   }
   
   .input-enter {
@@ -145,6 +215,7 @@ nav {
     appearance: textfield;
     cursor: text;
     border: none;
+
     width: 480px;
   }
   
