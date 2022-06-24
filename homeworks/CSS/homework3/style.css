@@ -6,7 +6,6 @@ color: #202124;
 }
 
 nav {
-
   padding: 6px;
   padding-left: 6px;
   height:48px;
@@ -16,13 +15,12 @@ nav {
   display: inline-block;
   flex-grow: 1;
   width: 100%;
-
-  
+ 
 }
 
 .header {
     list-style-type: none;
-    /* margin: 10px; */
+    margin: 10px;
     overflow: hidden;
     margin-right: 16px;
     font-family: arial,sans-serif;
@@ -31,10 +29,10 @@ nav {
     align-items: center;
     font-family: Arial, sans-serif;
     float: right;
+    height: 48px;
   }
   
   .headerli a {
-
     color:rgba(0,0,0,.87);
     text-align: center;
     padding: 5px 5px 5px 5px ;
@@ -46,7 +44,6 @@ nav {
     vertical-align: middle;
 
   }
-  
 
   .headerli a:hover {
     text-decoration: underline;
@@ -56,30 +53,39 @@ nav {
     border-radius: 50%;
 
   }
+
   .pic a {
     width: 32px;
     height: 32px;
-  
   }
-  /* .product a {
-    height: 32px;
-  } */
 
-  .pic :hover { 
+  .product a {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pic:hover, .product:hover { 
     background-color: rgba(60,64,67,.08);
     border-radius: 50px;
- 
-
+  
   }
   
   .container {
     text-align: center;
-    margin: 100px;
-
-    
+    margin: 100px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  
   }
-  
-  
+
+  .logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+  }
   .search-area {
     background: #fff;
     display: flex;
@@ -92,45 +98,36 @@ nav {
     width: auto;
     width: 582px;
     border-radius: 24px;
-
   
   }
   
   .search-area:hover {
   box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
-
   }
   
   .search {
     flex: 1;
     display: flex;
     padding: 5px 8px 0 16px;
-    padding-left: 14px;
-    
+    padding-left: 14px;  
   }
 
   .search-img {
     display: flex;
     align-items: center;
     padding-right: 13px;
-    margin-top: -5px;
-  
+    margin-top: -5px; 
   }
+
   .search-voice {
     display: flex;
     align-items: center;
     padding-right: 8px;
     padding-left: 8px;
-    margin-top: -5px;
-
-    
+    margin-top: -5px;  
   }
   
     #voiceSearchButton {
-    /* display: flex;
-    align-items: center;
-    padding-right: 13px;
-    margin-top: -5px; */
     background: url(/img/googlemic_clr_24px.svg) no-repeat center;
     vertical-align: middle;
     width: 24px;
@@ -174,8 +171,6 @@ nav {
       border-image: initial;
   }
 
-
-  
   .search-img span {
     color: #9aa0a6;
     height: 20px;
@@ -186,7 +181,6 @@ nav {
     line-height: 24px;
     position: relative;
     align-items: center !important;
-
   }
   
   .input-enter {
@@ -260,8 +254,6 @@ nav {
     border: 1px solid #dadce0;
     color: #202124;
   }
-
- 
   
   .footer {
     margin: 0;
