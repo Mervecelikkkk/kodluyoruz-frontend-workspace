@@ -60,8 +60,8 @@ nav {
   }
 
   .product a {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
 
   .pic:hover, .product:hover { 
@@ -289,3 +289,21 @@ nav {
   .footerli a:hover {
     text-decoration: underline;
   }
+
+/* product svg'sini gri yapmak için class */
+  .filter-gray{
+    filter: contrast(0);
+}
+
+.pro {
+  width: 16px; 
+  height: 16px; 
+  margin-right: 3px; 
+  opacity: 1; 
+  margin-top:8px;
+}
+
+/* products uzerine gelinince product svg'sinin siyah rengi almasi icin */
+.product:hover {
+  filter :brightness(0%) ;
+}
