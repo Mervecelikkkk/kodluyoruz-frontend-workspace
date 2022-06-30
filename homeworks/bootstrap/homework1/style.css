@@ -1,0 +1,94 @@
+html,body {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+/* .container {
+    max-width: 1148px !important;
+} */
+
+.navbar {
+
+}
+.navbar a {
+    font-weight: 600 !important;
+    color: white !important;
+}
+
+.logo {
+    font-size: 26px;
+    color: rgb(32, 29, 29);
+    font-family: 'Dancing Script', cursive;
+  
+
+}
+
+h4 {
+    text-align: center;
+    padding-top: 20px;
+
+}
+.card-body p {
+    font-weight: 600 !important;
+    color: rgb(131, 126, 126);
+}
+
+h6 {
+    text-align: center;
+    margin-left: 3rem;  
+    font-weight: 600 !important;
+    color: black;
+
+}
+
+h6:hover {
+    text-shadow: 5px 5px 3px rgb(99, 98, 98);
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+.img-c {
+border-radius: 100px;
+background-color:  hsl(210, 5%, 85%);;
+}
+
+.img-category {
+margin-right: 35.8px;
+}
+
+.card-img-top {
+    height: 253px;
+}
+
+.card-product {
+    margin-top: 2px;
+    /* margin-right: 2px; */
+
+}
+
+.card-title {
+font-weight: bold;
+font-size:medium;
+}
+
+.jumbotron {
+    background-color: #d7d9db;
+}
+
+
+footer {
+    display: flex;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    background-color: #e0e0e0;
+    color:rgb(32, 29, 29);
+    float:inline-end;
+ 
+}
+
+footer p {
+    text-align:center;
+}
