@@ -2,16 +2,17 @@ html,body {
     font-family: 'Quicksand', sans-serif !important;
 }
 
-/* .container {
-    max-width: 1148px !important;
-} */
 
-.navbar {
-
-}
 .navbar a {
     font-weight: 600 !important;
     color: white !important;
+}
+
+.navbar a:hover {
+    color: white;
+    text-shadow: 1px 1px 2px black, 
+                 0 0 25px rgb(255, 0, 0), 
+                 0 0 5px rgb(139, 0, 19);
 }
 
 .logo {
@@ -41,7 +42,7 @@ h6 {
 }
 
 h6:hover {
-    text-shadow: 5px 5px 3px rgb(99, 98, 98);
+    text-shadow: 5px 5px 3px rgb(202, 36, 58);
 }
 a:hover {
     text-decoration: none !important;
@@ -60,9 +61,21 @@ margin-right: 35.8px;
     height: 253px;
 }
 
-.card-product {
-    margin-top: 2px;
-    /* margin-right: 2px; */
+
+.btn-order {
+border-radius: 3px;
+border-style:none;
+background-color: rgb(202, 36, 58);
+color: white;
+text-align: center;
+box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+padding:5px 10px;
+float: right;
+}
+
+.btn-order:hover {
+    border-style: none;
+    background-color: rgb(224, 32, 57) ;
 
 }
 
