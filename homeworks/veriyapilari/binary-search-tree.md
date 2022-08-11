@@ -2,6 +2,8 @@
 
 ## **[7, 5, 1, 8, 3, 6, 0, 9, 4, 2]** dizisinin Binary-Search-Tree aşamaları:
 
+![binary-search-tree](https://user-images.githubusercontent.com/51165242/184119283-a3e15327-0267-43be-bddb-f76bb039e347.png)
+
 - Root dizinin ilk rakamı olan **7**'dir.
 - **5**<7 olduğundan rootun soluna,
 - **1**<7 ve **1**<5 olduğundan 5'in soluna,
