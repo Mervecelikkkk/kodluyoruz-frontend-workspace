@@ -109,8 +109,12 @@ input {
 }
 
 .btn-close {
-  width: 0.2em !important;
-  height: 0.2em !important;
-  float: right;
 
+  float: right;
+  font-size:1vw;
+}
+
+.btn-close:hover {
+
+background-color: #f78501;
 }
